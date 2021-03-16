@@ -43,6 +43,7 @@ RSpec.describe Hako::Schedulers::Ecs do
       network_configuration: nil,
       health_check_grace_period_seconds: nil,
       propagate_tags: 'TASK_DEFINITION',
+      enable_execute_command: nil,
     }
   end
   let(:update_service_params) do

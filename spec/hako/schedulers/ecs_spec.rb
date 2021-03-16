@@ -547,6 +547,7 @@ RSpec.describe Hako::Schedulers::Ecs do
           platform_version: nil,
           network_configuration: nil,
           propagate_tags: 'TASK_DEFINITION',
+          enable_execute_command: nil,
         ).and_return(Aws::ECS::Types::RunTaskResponse.new(
           failures: [],
           tasks: [
